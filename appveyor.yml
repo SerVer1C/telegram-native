@@ -2,7 +2,7 @@ version: 1.0.0+{build}
 
 image:
   - Visual Studio 2017
-  - Ubuntu
+#  - Ubuntu
 
 configuration: Release
 
@@ -21,13 +21,13 @@ environment:
   DOCKER_IMAGE: infactum/telegram-native-builder
 
   matrix:
-    - TARGET_PLATFORM: x86
+ #   - TARGET_PLATFORM: x86
     - TARGET_PLATFORM: x64
 
-matrix:
-  exclude:
-    - image: Ubuntu
-      TARGET_PLATFORM: x86
+#matrix:
+#  exclude:
+#    - image: Ubuntu
+#      TARGET_PLATFORM: x86
 
 init:
   - ps: |
